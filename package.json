@@ -1,0 +1,31 @@
+{
+  "name": "ai-blog-agent",
+  "version": "2.0.0",
+  "description": "Blog de AI automatizado — Claude + Replicate/nanobanana + Adsterra",
+  "type": "module",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "pipeline": "node scripts/run-pipeline.js",
+    "pipeline:dry": "DRY_RUN=true node scripts/run-pipeline.js"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.52.0",
+    "@next/mdx": "^14.2.0",
+    "dotenv": "^16.4.0",
+    "gray-matter": "^4.0.3",
+    "next": "^14.2.0",
+    "next-mdx-remote": "^5.0.0",
+    "react": "^18.3.0",
+    "react-dom": "^18.3.0",
+    "replicate": "^1.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/react": "^18.3.0"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
